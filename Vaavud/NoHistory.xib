@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="NoHistory" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no wind here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQk-lW-FuO">
+                    <rect key="frame" x="105.5" y="320" width="164" height="20"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to measurement screen and start enjoying vaavud." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zb-tq-cRB">
+                    <rect key="frame" x="87.5" y="370" width="200" height="35.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="z8E-jg-I2T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-EG-KMp">
+                    <rect key="frame" x="137.5" y="150" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="LhB-Vk-UrY"/>
+                        <constraint firstAttribute="width" constant="100" id="wwQ-ZD-9xp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eCL-EG-KMp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0yr-W8-EoX"/>
+                <constraint firstItem="eCL-EG-KMp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="Yxl-GJ-evm"/>
+                <constraint firstItem="MQk-lW-FuO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hWP-F1-Ye3"/>
+                <constraint firstItem="5zb-tq-cRB" firstAttribute="top" secondItem="MQk-lW-FuO" secondAttribute="bottom" constant="30" id="jxJ-K7-7ne"/>
+                <constraint firstItem="5zb-tq-cRB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mxc-SD-S02"/>
+                <constraint firstItem="MQk-lW-FuO" firstAttribute="top" secondItem="eCL-EG-KMp" secondAttribute="bottom" constant="70" id="sGJ-Yx-X3x"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icEmpty" width="74" height="61"/>
+    </resources>
+</document>
